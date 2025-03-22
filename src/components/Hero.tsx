@@ -56,7 +56,7 @@ const buttonVariants: Variants = {
     scale: [1, 1.05, 1],
     transition: {
       duration: 1.5,
-      repeat: -1, // Changed from Infinity to -1 for infinite looping
+      repeat: Infinity, // Changed from Infinity to -1 for infinite looping
       repeatType: "loop",
       ease: "easeInOut",
       delay: 1,
@@ -81,7 +81,7 @@ const gradientVariants: Variants = {
     scale: [1, 1.1, 1],
     transition: {
       duration: 5,
-      repeat: -1, // Changed from Infinity to -1 for infinite looping
+      repeat: Infinity, // Changed from Infinity to -1 for infinite looping
       repeatType: "loop",
       ease: "easeInOut",
     },
