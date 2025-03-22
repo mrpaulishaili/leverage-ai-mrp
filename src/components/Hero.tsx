@@ -1,8 +1,8 @@
 // src/components/Hero.tsx
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 // Variants for the headline (with a bounce effect)
-const headlineVariants = {
+const headlineVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -17,7 +17,7 @@ const headlineVariants = {
 };
 
 // Variants for the subheading (staggered word animation)
-const subheadingContainerVariants = {
+const subheadingContainerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -28,7 +28,7 @@ const subheadingContainerVariants = {
   },
 };
 
-const subheadingWordVariants = {
+const subheadingWordVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -42,7 +42,7 @@ const subheadingWordVariants = {
 };
 
 // Variants for the button (with a pulse effect)
-const buttonVariants = {
+const buttonVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: {
     opacity: 1,
@@ -56,7 +56,7 @@ const buttonVariants = {
     scale: [1, 1.05, 1],
     transition: {
       duration: 1.5,
-      repeat: Infinity,
+      repeat: -1, // Changed from Infinity to -1 for infinite looping
       repeatType: "loop",
       ease: "easeInOut",
       delay: 1,
@@ -65,7 +65,7 @@ const buttonVariants = {
 };
 
 // Variants for the background gradient animation
-const gradientVariants = {
+const gradientVariants: Variants = {
   hidden: { opacity: 0, scale: 0.8 },
   visible: {
     opacity: 0.5,
@@ -81,7 +81,7 @@ const gradientVariants = {
     scale: [1, 1.1, 1],
     transition: {
       duration: 5,
-      repeat: Infinity,
+      repeat: -1, // Changed from Infinity to -1 for infinite looping
       repeatType: "loop",
       ease: "easeInOut",
     },
