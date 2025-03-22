@@ -17,7 +17,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   isActive,
 }) => (
   <motion.div
-    className={`flex-shrink-0 w-[70%] md:w-[78%]  h-auto md:h-[80vh] mx-4 bg-[#F6FAF3] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${
+    className={`flex-shrink-0 w-[85%] md:w-[78%]  h-auto md:h-[65vh] mx-4 bg-[#F6FAF3] rounded-xl shadow-lg overflow-hidden transition-all duration-300 ${
       isActive ? "mt-4 " : "mt-20"
     }`}
     animate={{
